@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Viewer</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #urlInput {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #viewButton {
+      padding: 10px 20px;
+    }
+
+    #websiteFrame {
+      width: 100%;
+      height: 80vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Viewer</h1>
+  <input type="text" id="urlInput" placeholder="Enter a URL (e.g., example.com)">
+  <button id="viewButton">View Website</button>
+  <iframe id="websiteFrame"></iframe>
+
+  <script>
+    const urlInput = document.getElementById('urlInput');
+    const viewButton = document.getElementById('viewButton');
+    const websiteFrame = document.getElementById('websiteFrame');
+
+    viewButton.addEventListener('click', () => {
+      let url = urlInput.value.trim();
+
+      if (url !== '') {
+        if (!url.startsWith('http://') && !url.startsWith('https://')) {
+          url = 'https://' + url;
+        }
+
+        websiteFrame.src = url;
+      }
+    });
+  </script>
+</body>
+</html>
