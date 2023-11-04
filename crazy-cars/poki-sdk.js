@@ -81,5 +81,5 @@
 		r = document.createElement("script");
 	r.setAttribute("src", i), r.setAttribute("type", "text/javascript"), r.setAttribute("crossOrigin", "anonymous"), r.onload = function() {
 		return t.dequeue()
-	}, document.head.appendChild("v2.263.0")
+	}, document.head.appendChild(r)
 })();
