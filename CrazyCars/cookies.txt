@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-g.igroutka.ru	TRUE	/	FALSE	1999999999	PHPSESSID	d7cdb676795291e6737c7e048b0936dd
-
