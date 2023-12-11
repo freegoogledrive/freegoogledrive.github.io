@@ -1,6 +1,23 @@
 <html>
-  <video width="100%" height="100%" controls>
-  <source src="FNAFMOVIE.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<video id="videoPlayer" autoplay autobuffer controls></video>
+
+<script>
+var videoPlayer = document.getElementById('videoPlayer')
+
+var vArray = [
+    "my-first-video.mp4",
+    "my-second-video.mp4",
+    "my-thrid-video.mp4",
+]
+
+videoPlayer.src = vArray[0]
+
+i = 1
+videoPlayer.onended = function(){
+    if (i < vArray.length) {
+        videoPlayer.src = vArray[i]
+       i++
+    }
+}
+</script>
 </html>
