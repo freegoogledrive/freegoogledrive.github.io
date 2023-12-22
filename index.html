@@ -8,7 +8,7 @@
 <script>
 var standalone = document.getElementById("standalone");
 var webpage = document.getElementById("webpage");
-if (window.navigator.standalone)
+if (matchMedia('(display-mode: standalone)').matches)
 {
   standalone.style.visibility = "visible"; // show standalone div
   webpage.style.visibility = "hidden"; // hide webpage div
