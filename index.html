@@ -5,21 +5,6 @@
 </head>
 <body>
 
-<script>
-var standalone = document.getElementById("standalone");
-var webpage = document.getElementById("webpage");
-if (matchMedia('(display-mode: standalone)').matches)
-{
-  standalone.style.visibility = "visible"; // show standalone div
-  webpage.style.visibility = "hidden"; // hide webpage div
-}
-else
-{
-  standalone.style.visibility = "hidden"; // hide standalone div
-  webpage.style.visibility = "visible"; // show webpage div
-}
-</script>
-
 <div id="standalone">
 <h1><b>WELCOME!</b></h1>
 <p>Hello! This is the hub of all of my forks. The code in these forks is not mine, 
@@ -43,6 +28,19 @@ else
 <div id="webpage">
 <h1>PLEASE ADD TO HOMESCREEN</h1>
 </div>
+
+<script>
+var standalone = document.getElementById("standalone");
+var webpage = document.getElementById("webpage");
+if (window.navigator.standalone) {
+  standalone.style.visibility = "visible"; // show standalone div
+  webpage.style.visibility = "hidden"; // hide webpage div
+}
+else {
+  standalone.style.visibility = "hidden"; // hide standalone div
+  webpage.style.visibility = "visible"; // show webpage div
+}
+</script>
 
 <body style="background-color:#FD8219;">
 </body>
