@@ -10,13 +10,13 @@ var standalone = document.getElementById("standalone");
 var webpage = document.getElementById("webpage");
 if (window.navigator.standalone)
 {
-standalone.style.display = "block";
-webpage.style.display = "none";
+  standalone.style.visibility = "visible"; // show standalone div
+  webpage.style.visibility = "hidden"; // hide webpage div
 }
 else
 {
-standalone.style.display = "none";
-webpage.style.display = "block";
+  standalone.style.visibility = "hidden"; // hide standalone div
+  webpage.style.visibility = "visible"; // show webpage div
 }
 </script>
 
