@@ -5,6 +5,22 @@
 </head>
 <body>
 
+<script>
+var standalone = document.getElementById("standalone");
+var webpage = document.getElementById("webpage");
+if (window.navigator.standalone)
+{
+standalone.style.display = "block";
+webpage.style.display = "none";
+}
+else
+{
+standalone.style.display = "none";
+webpage.style.display = "block";
+}
+</script>
+
+<div id="standalone">
 <h1><b>WELCOME!</b></h1>
 <p>Hello! This is the hub of all of my forks. The code in these forks is not mine, 
   it belongs to the creators of the code.</p>
@@ -22,6 +38,11 @@
 <a href="https://acb.caculatorgeo.online/demo">Roblox</a>
 <br>
 <a href="https://167.71.43.43/">Croxy</a>
+</div>
+
+<div id="webpage">
+<h1>PLEASE ADD TO HOMESCREEN</h1>
+</div>
 
 <body style="background-color:#FD8219;">
 </body>
