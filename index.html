@@ -33,12 +33,12 @@
 var standalone = document.getElementById("standalone");
 var webpage = document.getElementById("webpage");
 if (window.navigator.standalone) {
-  standalone.style.visibility = "visible"; // show standalone div
-  webpage.style.visibility = "hidden"; // hide webpage div
+  standalone.style.display = "block"; // show standalone div
+  webpage.style.display = "none"; // hide webpage div
 }
 else {
-  standalone.style.visibility = "hidden"; // hide standalone div
-  webpage.style.visibility = "visible"; // show webpage div
+  standalone.style.display = "none"; // hide standalone div
+  webpage.style.display = "block"; // show webpage div
 }
 </script>
 
