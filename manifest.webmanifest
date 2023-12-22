@@ -1,0 +1,7 @@
+{
+      "name": "Walkadee",
+      "short_name": "Walkadee",
+      "display": "standalone",
+      "scope": "/",
+      "start_url": "/"
+    }
