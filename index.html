@@ -59,7 +59,7 @@
 <script>
 var standalone = document.getElementById("standalone");
 var webpage = document.getElementById("webpage");
-if (window.navigator.standalone) {
+if (window.navigator.standalone || !(/iPad|iPhone|iPod|Mac/.test(navigator.userAgent))) {
   standalone.style.display = "block"; // show standalone div
   webpage.style.display = "none"; // hide webpage div
 }
